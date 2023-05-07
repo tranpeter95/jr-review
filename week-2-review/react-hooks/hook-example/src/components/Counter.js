@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Counter = () => {
   // Declare the count state using the useState hook. Initialize count to 50
   // useState allows you to manage local state inside a functional component.
-  const [count, setCount] = useState(50);
+  const [count, setCount] = useState(60);
 
   // Define a function that updates the count state when the button is clicked
   const handleClick = () => {
@@ -27,6 +27,6 @@ export default Counter;
 
 /**
  * You could have put the state in the App component and passed the state and setState function down to the Counter component as props.
- * However, this would have required you to pass the props through the ColorToggle component as well (prop drilling) 
+ * However, this would have required you to pass the props through the ColorToggle component as well (prop drilling)
  * Can avoid this prop drilling by using the useContext hook to share state across components
-*/
+ */

@@ -1,6 +1,7 @@
 import React, { useState, createContext } from 'react';
 import Counter from './components/Counter';
 import ColorToggle from './components/ColorToggle';
+import AddName from './components/AddName';
 
 // Create a context to share background color state across components
 export const BackgroundColorContext = createContext();
@@ -15,6 +16,7 @@ const App = () => {
       <BackgroundColorContext.Provider value={{ setBackgroundColor }}>
         <Counter />
         <ColorToggle />
+        <AddName />
       </BackgroundColorContext.Provider>
     </div>
   );
