@@ -29,3 +29,9 @@ input {
   padding: 1rem;
   border: 1px solid black;
 }
+
+#todoBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
